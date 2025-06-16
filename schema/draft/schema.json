@@ -131,6 +131,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "content": {
@@ -367,6 +373,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "completion": {
@@ -488,6 +500,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "content": {
@@ -585,6 +603,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "action": {
@@ -714,6 +738,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "description": {
@@ -816,6 +846,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "capabilities": {
@@ -965,6 +1001,10 @@
                     "properties": {
                         "_meta": {
                             "properties": {
+                                "allowPartial": {
+                                    "description": "If specified, the caller is requesting partial results for this request. The receiver is not obligated to return partial results.",
+                                    "type": "boolean"
+                                },
                                 "progressToken": {
                                     "$ref": "#/definitions/ProgressToken",
                                     "description": "If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications."
@@ -1032,6 +1072,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "nextCursor": {
@@ -1078,6 +1124,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "nextCursor": {
@@ -1124,6 +1176,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "nextCursor": {
@@ -1154,6 +1212,10 @@
                     "properties": {
                         "_meta": {
                             "properties": {
+                                "allowPartial": {
+                                    "description": "If specified, the caller is requesting partial results for this request. The receiver is not obligated to return partial results.",
+                                    "type": "boolean"
+                                },
                                 "progressToken": {
                                     "$ref": "#/definitions/ProgressToken",
                                     "description": "If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications."
@@ -1176,6 +1238,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "roots": {
@@ -1218,6 +1286,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "nextCursor": {
@@ -1399,6 +1473,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "nextCursor": {
@@ -1420,6 +1500,10 @@
                     "properties": {
                         "_meta": {
                             "properties": {
+                                "allowPartial": {
+                                    "description": "If specified, the caller is requesting partial results for this request. The receiver is not obligated to return partial results.",
+                                    "type": "boolean"
+                                },
                                 "progressToken": {
                                     "$ref": "#/definitions/ProgressToken",
                                     "description": "If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications."
@@ -1635,6 +1719,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 },
                 "contents": {
@@ -1666,6 +1756,10 @@
                     "properties": {
                         "_meta": {
                             "properties": {
+                                "allowPartial": {
+                                    "description": "If specified, the caller is requesting partial results for this request. The receiver is not obligated to return partial results.",
+                                    "type": "boolean"
+                                },
                                 "progressToken": {
                                     "$ref": "#/definitions/ProgressToken",
                                     "description": "If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications."
@@ -1889,6 +1983,12 @@
                 "_meta": {
                     "additionalProperties": {},
                     "description": "This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.",
+                    "properties": {
+                        "hasMore": {
+                            "description": "If true, more results will follow.",
+                            "type": "boolean"
+                        }
+                    },
                     "type": "object"
                 }
             },
