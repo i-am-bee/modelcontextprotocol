@@ -794,6 +794,9 @@
                         "protocolVersion": {
                             "description": "The latest version of the Model Context Protocol that the client supports. The client MAY decide to support older versions as well.",
                             "type": "string"
+                        },
+                        "sessionId": {
+                            "$ref": "#/definitions/SessionId"
                         }
                     },
                     "required": [
@@ -831,6 +834,9 @@
                 },
                 "serverInfo": {
                     "$ref": "#/definitions/Implementation"
+                },
+                "sessionId": {
+                    "$ref": "#/definitions/SessionId"
                 }
             },
             "required": [
@@ -2104,6 +2110,13 @@
                 {
                     "$ref": "#/definitions/CompleteResult"
                 }
+            ]
+        },
+        "SessionId": {
+            "description": "Globally unique and cryptographically secure session identifier.",
+            "type": [
+                "string",
+                "integer"
             ]
         },
         "SetLevelRequest": {
