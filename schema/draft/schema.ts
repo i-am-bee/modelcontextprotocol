@@ -64,6 +64,11 @@ export interface Result {
 export type RequestId = string | number;
 
 /**
+ * Globally unique and cryptographically secure session identifier.
+ */
+export type SessionId = string | number;
+
+/**
  * A request that expects a response.
  */
 export interface JSONRPCRequest extends Request {
@@ -162,6 +167,7 @@ export interface InitializeRequest extends Request {
     protocolVersion: string;
     capabilities: ClientCapabilities;
     clientInfo: Implementation;
+    sessionId?: SessionId;
   };
 }
 
@@ -182,6 +188,7 @@ export interface InitializeResult extends Result {
    * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
    */
   instructions?: string;
+  sessionId?: SessionId;
 }
 
 /**
